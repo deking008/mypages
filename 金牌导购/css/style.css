@@ -65,7 +65,7 @@
 	background: -webkit-linear-gradient(top, #fb7d52, #fb6571);
 	background: -o-linear-gradient(top, #fb7d52, #fb6571);
 }
-.flex-btn{font-size:.5rem;text-align: center;background:#fff;}
+.flex-btn{font-size:.5rem;text-align: center;background:#fff;position:fixed;left:0;bottom:0;right:0;}
 .flex-btn .weui-flex__item{padding:.3rem 0 .2rem;color:#565656;position:relative;}
 .flex-btn .weui-flex__item img{width:.8rem;height:.8rem;margin-bottom:.15rem;}
 .flex-btn .weui-flex__item.active{color:#fb6e65;}
