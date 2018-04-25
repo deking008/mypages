@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 课程详情 </title>
+    <link rel="stylesheet" href="../assets/js/Swiper-4.0.7/swiper.min.css"/>
+</head>
+<body>
+<div class="page">
+
+    <div class="page-bd course_detail">
+
+        <!-- 页面内容-->
+         <!--试看5分钟-->
+        <div class="page-video">
+            <video>
+                <source src=""  type="video/mp4">
+            </video>
+            <div class="skmask"></div>
+            <div class="course_play">
+                <img  src="../assets/images/course_play.png">
+                <span>试看</span>
+                <span>5分钟</span>
+            </div>
+            <!--试看结束，购买后继续观看-->
+            <div class="video-end"style="display: none">
+                <p>试看结束，购买后继续观看</p>
+                <div class="play-end">
+                    <img  src="../assets/images/course_buy.png">
+                    <span><a href="支付课程.html" style="color: #fff;">马上购买</a></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-course">
+          <p>金牌讲师听力精讲-如何快速学会理财</p>
+            <div class="weui-flex">
+                <div class="weui-flex__item a1">
+                    <span>￥</span>
+                    <span>20.0</span>
+                </div>
+                <div class="a2" style="position: relative; top: 0.1rem;">
+                    <img  src="../assets/images/course_video.png">
+                    <span> 6389人在学</span>
+                </div>
+            </div>
+            <div class="buy_people">
+                <img  src="../assets/images/center_photo.png">
+                <span>瞭望星空 购买了该课程</span>
+            </div>
+            <div class="course_title">
+                <span></span>
+                <span>课程详情</span>
+            </div>
+            <div class="course_detail">
+                现在生活越来越好，人们生活上的闲钱也越来越多大部分都选择存进银行，风险低，但是回报率低！于是越来越多人在理财的道路上开始启航，但是因为不了解市场
+            </div>
+            <img class="detail_img"  src="../assets/images/course_detail01.jpg">
+        </div>
+    </div>
+    <a href="支付课程.html" class="course_btn">购买该课程</a>
+
+
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+
+  /*模拟代码，无实际用处*/
+  $(function () {
+    $(".course_play").on('click', function () {
+      $(".course_play").hide();
+      $(".skmask").hide();
+      setTimeout(function () {
+        $(".video-end").show();
+        $(".skmask").show();
+      },1000)
+    });
+  });
+</script>
+
+</body>
+</html>

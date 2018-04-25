@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 我的易物点 </title>
+    <link rel="stylesheet" href="../assets/js/Swiper-4.0.7/swiper.min.css"/>
+</head>
+<body>
+<div class="page">
+    <div class="page-bd">
+        <div class="weui-cells yw_form-cells mt0">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <h3>转赠易物点</h3>
+                </div>
+            </div>
+            <div class="weui-cell border-none">
+                <div class="weui-cell__hd">
+                    <img class="hd_icon" src="../assets/images/q_icon_jf.png" alt="">
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="当前易物点800">
+                </div>
+            </div>
+            <div class="weui-cell pt40">
+                <div class="weui-cell__hd">
+                    <img class="hd_icon" src="../assets/images/q_icon_user.png" alt="">
+                </div>
+                <div class="weui-cell__bd datalist_input">
+                    <input class="weui-input"  list="url_list"  type="text" placeholder="转赠会员ID或昵称">
+                    <datalist id="url_list">
+                        <option value="003 梦想的起航" />
+                        <option value="3620 小情调天使" />
+                        <option value="4620 蒙娜丽莎的微笑" />
+                    </datalist>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="btn-box">
+                        <a class="weui-btn weui-btn_primary" href="#">确定转赠</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+
+   $(function () {
+     $(".weui-input").on('focus', function () {
+       $(this).addClass('foucs');
+     });
+     $(".weui-input").on('blur', function () {
+       $(this).removeClass('foucs');
+     });
+   })
+
+</script>
+<!-- Initialize Swiper -->
+
+</body>
+</html>

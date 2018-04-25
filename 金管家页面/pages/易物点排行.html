@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+  <title> 易物点排行 </title>
+</head>
+<body>
+<div class="page">
+  <div class="page-hd">
+    <div class="header">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">易物点排行</div>
+    <div class="header-right">
+        <a href="#"></a>
+    </div>
+</div>
+  </div>
+  <div class="page-bd">
+    <!-- 页面内容-->
+    <div class="phb_top">
+      <h2>排行榜</h2>
+      <h3>累计获得易物点排行</h3>
+    </div>
+    <div class="weui-cells myranking">
+      <div class="weui-cell">
+        <div class="weui-cell__hd">
+          <span class="pm_num">89</span>
+        </div>
+        <div class="weui-cell__bd">
+          <h3 class="fs36">65656</h3>
+          <div class="fs24 text-gray">小情调天使</div>
+        </div>
+        <div class="weui-cell__ft">
+          <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+        </div>
+      </div>
+    </div>
+    <div class="ranking-list">
+      <div class="weui-cells top1">
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <span class="pm_num">
+              <img src="../assets/images/q_icon_top1.png" alt="">
+            </span>
+          </div>
+          <div class="weui-cell__bd">
+            <h3 class="fs36">965842</h3>
+            <div class="fs24 text-gray">你的女孩</div>
+          </div>
+          <div class="weui-cell__ft">
+            <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="weui-cells top2">
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <span class="pm_num">
+              <img src="../assets/images/q_icon_top2.png" alt="">
+            </span>
+          </div>
+          <div class="weui-cell__bd">
+            <h3 class="fs36">965842</h3>
+            <div class="fs24 text-gray">你的女孩</div>
+          </div>
+          <div class="weui-cell__ft">
+            <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="weui-cells top3">
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <span class="pm_num">
+              <img src="../assets/images/q_icon_top3.png" alt="">
+            </span>
+          </div>
+          <div class="weui-cell__bd">
+            <h3 class="fs36">965842</h3>
+            <div class="fs24 text-gray">你的女孩</div>
+          </div>
+          <div class="weui-cell__ft">
+            <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="weui-cells" id="list">
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <span class="pm_num">
+              04
+            </span>
+          </div>
+          <div class="weui-cell__bd">
+            <h3 class="fs36">965842</h3>
+            <div class="fs24 text-gray">你的女孩</div>
+          </div>
+          <div class="weui-cell__ft">
+            <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+          </div>
+        </div>
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <span class="pm_num">
+              05
+            </span>
+          </div>
+          <div class="weui-cell__bd">
+            <h3 class="fs36">965842</h3>
+            <div class="fs24 text-gray">你的女孩</div>
+          </div>
+          <div class="weui-cell__ft">
+            <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+          </div>
+        </div>
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <span class="pm_num">
+              06
+            </span>
+          </div>
+          <div class="weui-cell__bd">
+            <h3 class="fs36">965842</h3>
+            <div class="fs24 text-gray">你的女孩</div>
+          </div>
+          <div class="weui-cell__ft">
+            <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+          </div>
+        </div>
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <span class="pm_num">
+              07
+            </span>
+          </div>
+          <div class="weui-cell__bd">
+            <h3 class="fs36">965842</h3>
+            <div class="fs24 text-gray">你的女孩</div>
+          </div>
+          <div class="weui-cell__ft">
+            <span class="avatar"><img src="../assets/images/tx.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weui-loadmore">
+      <i class="weui-loading"></i>
+      <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+
+  </div>
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script>
+
+  // 模拟用
+  var str = '<div class="weui-cell"><div class="weui-cell__hd"> <span class="pm_num">07</span> </div> <div class="weui-cell__bd"> <h3 class="fs36">965842</h3> <div class="fs24 text-gray">你的女孩</div> </div> <div class="weui-cell__ft"> <span class="avatar"><img src="../assets/images/tx.png" alt=""></span> </div> </div>';
+  var loading = false;  //状态标记
+  $('.page-bd').infinite().on("infinite", function() {
+    if(loading) return;
+    loading = true;
+    setTimeout(function() {
+      $("#list").append(str);
+      loading = false;
+    }, 1500);   //模拟延迟
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 购买vip </title>
+    <link rel="stylesheet" href="../assets/js/Swiper-4.0.7/swiper.min.css"/>
+</head>
+<body>
+<div class="page">
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="shuoming">
+          <div class="shuoming_title">
+              <span>|</span>
+              <span>购买VIP说明</span>
+          </div>
+
+            <p>
+            <ul class="liucheng">
+                <li>
+                    <div class="lc_content">
+                        购买VIP后您可免费观看平台的全部收费视频课程
+                    </div>
+                </li>
+                <li>
+                    <div class="lc_content">
+                        您将获得推广分佣权利，推广成长晋升到越高的等级，
+                        拿的分红越多。具体可详情推广说明或咨询平台客服。
+                    </div>
+                </li>
+            </ul>
+            </p>
+        </div>
+        <div class="pay_way">
+            <div class="pay_title">
+                <span>|</span>
+                <span>支付方式</span>
+            </div>
+
+            <div class="pay">
+                <div class="weixin">
+                    <img src="../assets/images/weixin_pay.png">
+                    <p>微信支付</p>
+                </div>
+                <div class="zhifubao">
+                    <img src="../assets/images/zhifubao_pay.png">
+                    <p>支付宝</p>
+                </div>
+                <div class="yinlian">
+                    <img src="../assets/images/yinlian_pay.png">
+                    <p>银联支付</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+<div class="pay_bottom">
+  <span style="font-weight: 400">应付金额：</span>
+  <span>￥</span>
+  <span>99.</span>
+  <span>00</span>
+  <span>马上支付</span>
+</div>
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+    $(".weixin").on('click', function () {
+        $(this).css("background-image","url(../assets/images/zhifu_bg.png)");
+        $(this).css("background-size","cover");
+        $(".zhifubao").css("background-image","none");
+        $(".yinlian").css("background-image","none");
+    });
+    $(".zhifubao").on('click', function () {
+        $(this).css("background-image","url(../assets/images/zhifu_bg.png)");
+        $(this).css("background-size","cover");
+        $(".weixin").css("background-image","none");
+        $(".yinlian").css("background-image","none");
+    });
+    $(".yinlian").on('click', function () {
+        $(this).css("background-image","url(../assets/images/zhifu_bg.png)");
+        $(this).css("background-size","cover");
+        $(".weixin").css("background-image","none");
+        $(".zhifubao").css("background-image","none");
+    });
+</script>
+</body>
+</html>

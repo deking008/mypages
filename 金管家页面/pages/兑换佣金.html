@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 我的易物点 </title>
+    <link rel="stylesheet" href="../assets/js/Swiper-4.0.7/swiper.min.css"/>
+</head>
+<body>
+<div class="page">
+    <div class="page-bd">
+        <div class="weui-cells yw_form-cells mt0">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <h3>兑换佣金</h3>
+                </div>
+            </div>
+            <div class="weui-cell border-none">
+                <div class="weui-cell__hd">
+                    <img class="hd_icon" src="../assets/images/q_icon_jf.png" alt="">
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="inp1" type="text" placeholder="可用易物点800">
+                </div>
+                <span class="fs22 text-red warning">最少兑换2000易物点</span>
+            </div>
+
+
+            <div class="weui-cell" style="padding-bottom: 40px;">
+                <div class="weui-cell__bd">
+                    <div class="btn-box">
+                        <a class="weui-btn weui-btn_primary dh_btn" href="javascript:;">确定兑换</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yj_tsbox">
+            <h4><i class="icon_ts"></i><span>兑换佣金</span></h4>
+            <p>易物点可以20:1的比例兑换成佣金，每次兑换最低100元<br/>
+                (即最少兑换2000易物点)<br/>
+            每天兑换100名额，今天还剩45个名额
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+   $(function () {
+     $(".weui-input").on('focus', function () {
+       $(this).addClass('foucs');
+     });
+     $(".weui-input").on('blur', function () {
+       if($(this).val() !== ""){
+         $(this).addClass('foucs');
+       }
+       else{
+         $(this).removeClass('foucs');
+       }
+     });
+     $(".weui-input").on('change', function () {
+       if($(this).val() !== ""){
+         $(this).addClass('foucs');
+       }
+       else{
+         $(this).removeClass('foucs');
+       }
+     });
+     $(".dh_btn").on('click', function () {
+        if($("#inp1").val()<2000){
+          $(".warning").show();
+        }else{
+          $(".warning").hide();
+        }
+     });
+   })
+</script>
+<!-- Initialize Swiper -->
+
+</body>
+</html>

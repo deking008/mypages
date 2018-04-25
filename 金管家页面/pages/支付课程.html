@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 支付课程 </title>
+    <link rel="stylesheet" href="../assets/js/Swiper-4.0.7/swiper.min.css"/>
+</head>
+<body>
+<div class="page">
+    <div class="page-bd">
+
+        <!-- 页面内容-->
+        <div class="xinxi">
+          <div class="xinxi_title">
+              <span>|</span>
+              <span>课程信息</span>
+          </div>
+            <div class="weui-panel weui-panel_access pay_course">
+                <div class="weui-panel__bd">
+                    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="../assets/images/list_img01.jpg">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <h4 class="weui-media-box__title">金牌讲师听力精讲-如何快速学会
+                                理财和投资新型产品</h4>
+                            <span class="weui-media-box__desc" style="font-size: 12px; margin-right: -4px; font-size: 600;">￥</span>
+                            <span class="weui-media-box__desc" style="font-size: 17px;">15.00</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pay_way">
+            <div class="pay_title">
+                <span>|</span>
+                <span>支付方式</span>
+            </div>
+
+            <div class="weui-cells weui-cells_checkbox pay_check mt0">
+                <label class="weui-cell weui-check__label" for="s11">
+                    <div class="weui-cell__hd">
+                        <input type="radio" class="weui-check ch3" name="checkbox1" id="s11" checked="checked">
+                        <i class="weui-icon-checked ch4"></i>
+                    </div>
+                    <div class="weui-cell__bd ch1">
+                        <span>￥</span>
+                        <span>15.</span>
+                        <span>00</span>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label" for="s12">
+                    <div class="weui-cell__hd">
+                        <input type="radio" name="checkbox1" class="weui-check ch3" id="s12">
+                        <i class="weui-icon-checked ch4"></i>
+                    </div>
+                    <div class="weui-cell__bd ch2">
+                        <span>￥</span>
+                        <span>10.</span>
+                        <span>00</span>
+                        <span>+</span>
+                        <span>200易物点</span>
+                        <span>易物点不足</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="pay">
+                <div class="weixin">
+                    <img src="../assets/images/weixin_pay.png">
+                    <p>微信支付</p>
+                </div>
+                <div class="zhifubao">
+                    <img src="../assets/images/zhifubao_pay.png">
+                    <p>支付宝</p>
+                </div>
+                <div class="yinlian">
+                    <img src="../assets/images/yinlian_pay.png">
+                    <p>银联支付</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="pay_bottom">
+        <span style="font-weight: 300;">应付金额：</span>
+        <span>￥</span>
+        <span>15.</span>
+        <span>00</span>
+        <a class="gopay_btn" href="分红权利.html">马上支付</a>
+    </div>
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+    $(".weixin").on('click', function () {
+        $(this).css("background-image","url(../assets/images/zhifu_bg.png)");
+        $(this).css("background-size","cover");
+        $(".zhifubao").css("background-image","none");
+        $(".yinlian").css("background-image","none");
+    });
+    $(".zhifubao").on('click', function () {
+        $(this).css("background-image","url(../assets/images/zhifu_bg.png)");
+        $(this).css("background-size","cover");
+        $(".weixin").css("background-image","none");
+        $(".yinlian").css("background-image","none");
+    });
+    $(".yinlian").on('click', function () {
+        $(this).css("background-image","url(../assets/images/zhifu_bg.png)");
+        $(this).css("background-size","cover");
+        $(".weixin").css("background-image","none");
+        $(".zhifubao").css("background-image","none");
+    });
+</script>
+</body>
+</html>
