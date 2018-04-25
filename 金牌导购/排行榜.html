@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="x5-orientation" content="portrait">
+	<title>排行榜</title>
+	<script src="js/comm.js"></script>
+	<link href="lib/weui/weui.min.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+		.weui-picker__item {
+				padding: 0;
+				height: 34px;
+				line-height: 34px
+			}
+	</style> 
+</head>
+<body>
+<div class="small_page">
+	<!--头部 -->
+	<div class="small_head whitehd" style="background:#fb7d52;">
+		<div class="go-back"></div>
+		<div class="head-title">排行榜</div>
+		<div class="tool-box"><img src="images/amore2.png" style="width:.9rem;"></div>
+	</div>
+	<!--底部 导航-->
+	<div class="small_foot">
+		<div class="weui-flex in-align flex-btn">
+			<a class="weui-flex__item " href="index.html">
+				<img src="images/foot1.png">
+				<p>首页</p>
+			</a>
+			<a class="weui-flex__item" href="粉丝.html">
+				<img src="images/foot2.png">
+				<p>粉丝</p>
+			</a>
+			<div class="weui-flex__item">
+				<div class="sao-btn">
+					<img src="images/sao00.png">
+				</div>
+			</div>
+			<a class="weui-flex__item active" href="排行榜.html">
+				<img src="images/foot33.png">
+				<p>排行榜</p>
+			</a>
+			<a class="weui-flex__item" href="我的.html">
+				<img src="images/foot4.png">
+				<p>我的</p>
+			</a>
+		</div>
+	</div> 
+	
+	<!--页面主体 -->
+	<div class="small_body">
+		<div class="warp-pages am-pages">
+			<div class="page-hd">
+				<div class="hd-title">
+					金牌导购
+				</div>
+				<div class="hd-date " id="multiPickerBtn">
+					2017-08
+				</div>
+				<div class="pai-right">
+					<img src="images/gold00.png">
+					<div class="icon-01"><img src="images/xing0.png"></div>
+					<div class="icon-02"><img src="images/xing0.png"></div>
+					<div class="icon-03"><img src="images/xing0.png"></div>
+				</div>
+				<div class="weui-flex tab-flex">
+					<div class="weui-flex__item active">业绩排行</div>
+					<div class="weui-flex__item">粉丝数排行</div>
+				</div>
+			</div>
+			<div class="list-top">
+				<!--业绩排行-->
+				<div class="weui-cells no-end litop-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河区总店  排名<span class="fcblue">38</span></p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text">￥2830</span>
+						</div>
+					</div>
+				</div>
+				<!--粉丝数排行-->
+				<div class="weui-cells no-end litop-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河区总店  排名<span class="fcblue">27</span></p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text"><i>粉丝</i>2830</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="list-com">
+				<!--业绩排行-->
+				<div class="weui-cells no-end litop-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<img src="images/list01.png">
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text fcred">28300<i>元</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<img src="images/list02.png">
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text fcred">28300<i>元</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<img src="images/list03.png">
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text fcred">28300<i>元</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<span>4</span>
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text">28300<i>元</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<span>5</span>
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text">28300<i>元</i></span>
+						</div>
+					</div>
+				</div>
+				<!--粉丝数排行-->
+				<div class="weui-cells no-end litop-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<img src="images/list01.png">
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text fcred">28300<i>人</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<img src="images/list02.png">
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text fcred">28300<i>人</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<img src="images/list03.png">
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text fcred">28300<i>人</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<span>4</span>
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text">28300<i>人</i></span>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__num">
+							<span>5</span>
+						</div>
+						<div class="weui-cell__hd">
+							<img src="images/user00.png" class="userimg">
+						</div>
+						<div class="weui-cell__bd">
+							<h5 class="list-title">克里斯娜 </h5>
+							<p class="list-text">天河正佳广场店</p>
+						</div>
+						<div class="weui-cell__ft">
+							<span class="ft-text">28300<i>人</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+</body>
+<script src="lib/jquery/zepto.min.js"></script>
+<script src="lib/weui/weui.min.js"></script>
+
+<script>
+
+$(function(){
+	$('#multiPickerBtn').on('click', function () {
+	    weui.picker([{
+	        label: '2015',
+	        value: '2015'
+	    }, {
+	        label: '2016',
+	        value: '2016'
+	    }, {
+	        label: '2017',
+	        value: '2017'
+	    }], [{
+	        label: '01',
+	        value: '01'
+	    }, {
+	        label: '02',
+	        value: '02'
+	    }, {
+	        label: '03',
+	        value: '03'
+	    }], {
+	        defaultValue: ['3', 'A'],
+	        onChange: function onChange(result) {
+	            console.log(result);
+	        },
+	        onConfirm: function onConfirm(result) {
+	            console.log(result);
+	        },
+	        id: 'multiPickerBtn'
+	    });
+	});
+		$(".list-com>div").eq(0).show();
+		$(".list-top>div").eq(0).show();
+		$(".tab-flex").on("click",".weui-flex__item",function(){
+			var $index = $(this).index();
+//			console.log($index);
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".list-com>div").eq($index).show().siblings(".litop-cells").hide();
+			$(".list-top>div").eq($index).show().siblings(".litop-cells").hide();
+		})
+})
+	 	
+	
+</script>
+
+</html>

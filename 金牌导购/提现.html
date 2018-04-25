@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="x5-orientation" content="portrait">
+	<title>提现</title>
+	<script src="js/comm.js"></script>
+	<link href="lib/weui/weui.min.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+		.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{color:#fb6e65;}
+		.warp-password {
+  padding: 1rem .75rem;
+}
+.warp-password .pass-title {
+  font-size: .55rem;
+  font-weight: 600;
+  color: #323232;
+  padding-bottom: .25rem;
+}
+.warp-password .input-box {
+  padding: .25rem;
+  border-bottom: 2px solid #4b8ff5;
+}
+.warp-password .input-box input {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: #191919;
+  width: 90%;
+}
+.warp-password .input-box input:focus {
+  outline: none;
+}
+.warp-password .pass-tip {
+  padding: .5rem 0;
+  color: #949494;
+  font-size: .5rem;
+}
+.mon-icon{font-size:.6rem;font-weight: bold;}
+	</style> 
+</head>
+<body>
+<div class="small_page">
+	<!--头部 -->
+	<div class="small_head">
+		<div class="go-back"></div>
+		<div class="head-title">提现</div>
+		<div class="tool-box"><img src="images/amore1.png" style="width:.9rem;"></div>
+	</div>
+	<!--底部 导航-->
+	<!--<div class="small_foot">
+		<div class="weui-flex in-align flex-btn">
+			<a class="weui-flex__item active" href="index.html">
+				<img src="images/foot11.png">
+				<p>首页</p>
+			</a>
+			<a class="weui-flex__item" href="首页.html">
+				<img src="images/foot2.png">
+				<p>粉丝</p>
+			</a>
+			<div class="weui-flex__item">
+				<div class="sao-btn">
+					<img src="images/sao00.png">
+				</div>
+			</div>
+			<a class="weui-flex__item" href="排行榜.html">
+				<img src="images/foot3.png">
+				<p>排行榜</p>
+			</a>
+			<a class="weui-flex__item" href="#">
+				<img src="images/foot4.png">
+				<p>我的</p>
+			</a>
+		</div>
+	</div> -->
+	
+	<!--页面主体 -->
+	<div class="small_body">
+		<div class="warp-pages">
+			<div class="warp-password" style="background:white;">
+				<div class="pass-title">
+					提现金额
+				</div>
+				<div class="input-box">
+					<span class="mon-icon">￥</span><input type="tel" placeholder="" value="1000" >
+				</div>
+				<div class="pass-tip">
+					可提现金额￥8765.28
+				</div>
+				
+			</div>
+			<div class="weui-cells no-end weui-cells_checkbox small-check" style="margin-top:0rem;">
+	            <div class="weui-cell">
+	                <div class="weui-cell__bd fz22" style="font-weight: 600;">
+						提现到
+	                </div>
+	            </div>
+	            <label class="weui-cell weui-check__label" for="x11">
+	            	<div class="weui-cell__hd">
+	            		<img src="images/xing01.jpg" class="xing-img" />
+	            	</div>
+	                <div class="weui-cell__bd">
+	                	<div class="pp-tells">微信</div>
+	                </div>
+	                <div class="weui-cell__ft small-radio">
+	                    <input type="radio" class="weui-check" name="radio1" id="x11" checked>
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	            </label>
+	            <label class="weui-cell weui-check__label" for="x12">
+	            	<div class="weui-cell__hd">
+	            		<img src="images/xing02.jpg" class="xing-img" />
+	            	</div>
+	                <div class="weui-cell__bd">
+	                	<div class="pp-tells">支付宝</div>
+	                </div>
+	                <div class="weui-cell__ft small-radio">
+	                    <input type="radio" class="weui-check" name="radio1" id="x12">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	            </label>
+	            <label class="weui-cell weui-check__label" for="x13">
+	            	<div class="weui-cell__hd">
+	            		<img src="images/xing03.jpg" class="xing-img" />
+	            	</div>
+	                <div class="weui-cell__bd">
+	                	<div class="pp-tells">招商银行招商银行</div>
+	                </div>
+	                <div class="weui-cell__ft small-radio">
+	                    <input type="radio" class="weui-check" name="radio1" id="x13">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	            </label>
+	        </div>
+			<div class="weui-cells no-end" style="margin-top:.5rem;">
+	            <a class="weui-cell weui-cell_access" href="添加银行卡.html">
+	                <div class="weui-cell__bd fz22" style="font-weight: 600;padding:.2rem 0;">
+						添加银行卡
+	                </div>
+	                <div class="weui-cell__ft"></div>
+	            </a>
+	        </div>
+			
+			
+			<div class="btn-boxs" style="padding:0 2.5rem;">
+				<div class="tix-tip">点击确认申请，即表示已阅读并同意 <a href="#">提现协议</a></div>
+				<div class="small-btn zborange">确认申请</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	
+	
+	
+</div>
+
+</body>
+<script src="lib/jquery/zepto.min.js"></script>
+
+<script>
+
+$(function(){
+		
+		
+})
+	 	
+	
+</script>
+
+</html>

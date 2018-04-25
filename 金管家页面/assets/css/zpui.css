@@ -6022,7 +6022,6 @@ button.swiper-pagination-bullet {
   -webkit-align-items: center;
           align-items: center;
   line-height: 1em;
-  position: relative;
   box-shadow: 0 -0.02rem 0.08rem 0 rgba(0, 0, 0, 0.1);
 }
 

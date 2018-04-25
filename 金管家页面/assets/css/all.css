@@ -1149,6 +1149,8 @@
   background-image: url("../images/user.png");
   background-size: 100% 100%;
   margin-right: 0.066667rem;
+  position: relative;
+  top: -0.02rem;
 }
 
 .page-bd.hadbuy_course {
